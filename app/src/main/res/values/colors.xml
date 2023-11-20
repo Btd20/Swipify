@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#4A00FF</color>
+    <color name="titleColor">#FFFFFFFF</color>
+    <color name="textColor">#FFFFFFFF</color>
+    <color name="acceptButton">#58CD2C</color>
+    <color name="cancelButon">#E13333</color>
+    <color name="buttonColor">#FFFFFFFF</color>
+    <color name="textButton">#FF000000</color>
+    <color name="navbar">#795DBD</color>
+    <color name="footer">#795DBD</color>
+    <color name="iconColor">#FF000000</color>
 </resources>
