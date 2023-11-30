@@ -18,7 +18,7 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="50dp"
-        android:src="@drawable/bannerSw" />
+        android:src="@drawable/swipifybanner_sinfondo" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -35,16 +35,29 @@
             android:id="@+id/username_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:hint="@string/usernameText"
+=======
+>>>>>>> ec59599635456772816d7060f07656ed6563032f
             android:inputType="text" />
 
         <EditText
             android:id="@+id/password_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:hint="@string/passwordText"
             android:inputType="textPassword" />
 
+=======
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+>>>>>>> ec59599635456772816d7060f07656ed6563032f
     </LinearLayout>
 
     <Button
