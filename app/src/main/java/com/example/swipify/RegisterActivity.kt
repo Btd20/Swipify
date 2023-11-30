@@ -9,5 +9,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class RegisterActivity : AppCompatActivity() {
-
+    fun onRegisterClick(view: View) {
+        // Crea un enlace para la página de registro
+        // poner codigo
+    }
 }

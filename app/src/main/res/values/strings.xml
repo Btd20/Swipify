@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Swipify</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
+    <string name="usernameText">Usuario</string>
+    <string name="passwordText">Contraseña</string>
+    <string name="repeatPwd">Repetir contraseña</string>
+    <string name="loginButton">Entrar</string>
+    <string name="registerLink">Registrarme</string>
+    <string name="forgotPwd">Recuperar contraseña</string>
+    <string name="createAcc">Crear cuenta</string>
 </resources>
