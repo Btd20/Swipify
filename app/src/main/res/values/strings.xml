@@ -3,4 +3,8 @@
     <string name="menuHome">Inicio</string>
     <string name="menuExplore">Explorar</string>
     <string name="menuLists">Listas</string>
+    <string name="box1">Éxitos mundiales</string>
+    <string name="box2">Éxitos de españa</string>
+    <string name="box3">Recomendados para ti</string>
+    <string name="box4">Lo mejor de este mes</string>
 </resources>

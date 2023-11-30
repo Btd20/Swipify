@@ -13,4 +13,5 @@
     <color name="navbar">#795DBD</color>
     <color name="footer">#795DBD</color>
     <color name="iconColor">#FF000000</color>
+    <color name="boxColor">#C9333333</color>
 </resources>
