@@ -6,7 +6,7 @@
     <color name="titleColor">#FFFFFFFF</color>
     <color name="textColor">#FFFFFFFF</color>
     <color name="acceptButton">#58CD2C</color>
-    <color name="cancelButon">#E13333</color>
+    <color name="cancelButton">#E13333</color>
     <color name="buttonColor">#FFFFFFFF</color>
     <color name="textButton">#FF000000</color>
     <color name="navbar">#795DBD</color>
