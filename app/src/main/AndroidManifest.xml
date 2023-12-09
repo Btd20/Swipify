@@ -24,6 +24,8 @@
         <activity android:name=".MainPageActivity" android:exported="true" />
         <activity android:name=".LoginActivity" android:exported="true" />
         <activity android:name=".RegisterActivity" android:exported="true" />
+        <activity android:name=".MyListActivity" android:exported="true" />
+        <activity android:name=".SwipePageActivity" android:exported="true" />
     </application>
 
 </manifest>

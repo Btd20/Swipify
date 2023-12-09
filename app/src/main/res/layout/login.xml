@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/backgroundColor"
     android:layout_height="match_parent">
@@ -35,29 +36,22 @@
             android:id="@+id/username_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:hint="@string/usernameText"
-=======
->>>>>>> ec59599635456772816d7060f07656ed6563032f
             android:inputType="text" />
 
         <EditText
             android:id="@+id/password_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:hint="@string/passwordText"
-            android:inputType="textPassword" />
-
-=======
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp" />
->>>>>>> ec59599635456772816d7060f07656ed6563032f
+            android:layout_marginTop="20dp"
+            tools:ignore="DuplicateIds" />
     </LinearLayout>
 
     <Button
