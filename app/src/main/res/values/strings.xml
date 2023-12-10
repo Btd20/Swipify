@@ -37,4 +37,7 @@
     <!-- PROFILE -->
     <string name="changePassword">Cambiar contraseña</string>
     <string name="changeEmail">Cambiar email</string>
+
+    <string name="list_name">Nombre lista </string>
+    <string name="search">Buscar</string>
 </resources>
