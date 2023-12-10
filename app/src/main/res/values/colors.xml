@@ -6,6 +6,7 @@
     <color name="backgroundColor2">#3C3C3C</color>
     <color name="titleColor">#FFFFFFFF</color>
     <color name="textColor">#FFFFFFFF</color>
+    <color name="authorColor">#878787</color>
     <color name="acceptButton">#58CD2C</color>
     <color name="cancelButton">#E13333</color>
     <color name="buttonColor">#FFFFFFFF</color>

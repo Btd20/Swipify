@@ -1,94 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/backgroundColor"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor">
 
 
     <ImageView
         android:id="@+id/user_image"
         android:layout_width="344dp"
         android:layout_height="136dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="50dp"
-        android:src="@drawable/swipifybanner_sinfondo" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/user_image"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/white"
-        android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/username_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-<<<<<<< HEAD
-            android:hint="@string/usernameText"
-=======
->>>>>>> ec59599635456772816d7060f07656ed6563032f
-            android:inputType="text" />
-
-        <EditText
-            android:id="@+id/password_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-<<<<<<< HEAD
-            android:hint="@string/passwordText"
-            android:inputType="textPassword" />
-
-=======
-            android:inputType="textPassword" />
-
-        <Button
-            android:id="@+id/login_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp" />
->>>>>>> ec59599635456772816d7060f07656ed6563032f
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="352dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="243dp"
-        android:text="@string/loginButton" />
+        android:layout_marginTop="50dp"
+        android:src="@drawable/swipifybanner_sinfondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/register_text"
+        android:id="@+id/tituloLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="215dp"
-        android:onClick="onRegisterClick"
-        android:text="@string/registerLink" />
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lato_black"
+        android:text="@string/loginTile"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_image" />
+
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:hint="@string/usernameText"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloLogin" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:hint="@string/passwordText"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_edit_text" />
+
+    <Button
+        android:id="@+id/login_button2"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lato_bold"
+        android:onClick="login"
+        android:text="@string/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_text" />
 
     <TextView
         android:id="@+id/forgotPwd_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="184dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="-5dp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center_vertical|center_horizontal"
         android:onClick="onRecoverPwd"
-        android:text="@string/forgotPwd" />
-</RelativeLayout>
+        android:text="@string/forgotPwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button2" />
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="-25dp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="register"
+        android:text="@string/registerLink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPwd_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

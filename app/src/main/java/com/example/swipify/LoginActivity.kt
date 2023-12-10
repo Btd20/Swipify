@@ -13,4 +13,12 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
     }
+
+    fun register(view: View) {
+        setContentView(R.layout.register)
+    }
+
+    fun login(view: View) {
+        setContentView((R.layout.main_page))
+    }
 }

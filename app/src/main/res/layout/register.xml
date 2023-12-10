@@ -1,70 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/backgroundColor">
+
 
     <ImageView
         android:id="@+id/user_image"
         android:layout_width="344dp"
         android:layout_height="136dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="50dp"
-        android:src="@drawable/bannerSw" />
+        android:layout_marginTop="50dp"
+        android:src="@drawable/swipifybanner_sinfondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tituloRegister"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/user_image"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="100dp"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:elevation="1dp">
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lato_black"
+        android:text="@string/createAcc"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_image" />
 
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:hint="@string/usernameText"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloRegister" />
 
-        <EditText
-            android:id="@+id/username_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/usernameText"
-            android:inputType="text" />
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:hint="@string/passwordText"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_edit_text" />
 
-        <EditText
-            android:id="@+id/password_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/passwordText"
-            android:inputType="textPassword" />
-
-        <EditText
-            android:id="@+id/repeat_password_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/repeatPwd"
-            android:inputType="textPassword" />
-
-    </LinearLayout>
+    <EditText
+        android:id="@+id/confirm_password_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:hint="@string/repeatPwd"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_text" />
 
     <Button
-        android:id="@+id/login_button"
-        android:layout_width="343dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/null"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginBottom="197dp"
-        android:text="@string/createAcc" />
-</RelativeLayout>
+        android:id="@+id/login_button2"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/createAcc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_edit_text" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="-5dp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="register"
+        android:text="@string/loginLink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

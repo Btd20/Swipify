@@ -1,20 +1,40 @@
 <resources>
+
+    <!-- APP GENERAL -->
     <string name="app_name">Swipify</string>
-<<<<<<< HEAD
+
+    <!-- LOGIN -->
     <string name="usernameText">Usuario</string>
     <string name="passwordText">Contraseña</string>
-    <string name="repeatPwd">Repetir contraseña</string>
-    <string name="loginButton">Entrar</string>
-    <string name="registerLink">Registrarme</string>
+    <string name="loginButton">Iniciar sesión</string>
+    <string name="loginTile">Inicio de sesión</string>
+    <string name="loginLink">Iniciar sesión</string>
     <string name="forgotPwd">Recuperar contraseña</string>
+
+    <!-- REGISTER -->
+    <string name="repeatPwd">Repetir contraseña</string>
+    <string name="registerButton">Registrarme</string>
+    <string name="registerTitle">Registro</string>
+    <string name="registerLink">Registrarme</string>
     <string name="createAcc">Crear cuenta</string>
-=======
+
+    <!-- MENU -->
     <string name="menuHome">Inicio</string>
     <string name="menuExplore">Explorar</string>
     <string name="menuLists">Listas</string>
+
+    <!-- RECTÁNGULOS HOME -->
     <string name="box1">Éxitos mundiales</string>
     <string name="box2">Éxitos de españa</string>
     <string name="box3">Recomendados para ti</string>
     <string name="box4">Lo mejor de este mes</string>
->>>>>>> ec59599635456772816d7060f07656ed6563032f
+
+    <!-- EXPLORE -->
+    <string name="songTitle">Blinding Lights</string>
+    <string name="songAuthor">The Weeknd</string>
+    <string name="songAlbum">After Hours</string>
+
+    <!-- PROFILE -->
+    <string name="changePassword">Cambiar contraseña</string>
+    <string name="changeEmail">Cambiar email</string>
 </resources>

@@ -15,4 +15,9 @@
         android:enabled="true"
         android:icon="@drawable/list"
         android:title="@string/menuLists"/>
+    <item
+        android:id="@+id/page_4"
+        android:enabled="true"
+        android:icon="@drawable/search"
+        android:title="Buscar"/>
 </menu>
