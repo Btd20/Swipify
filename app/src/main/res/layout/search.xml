@@ -110,11 +110,11 @@
 
                 <Button
                     android:id="@+id/button2"
-                    android:layout_width="168dp"
+                    android:layout_width="40dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
                     android:layout_weight="1"
-                    app:icon="@android:drawable/ic_media_play"
-                    android:layout_gravity="bottom|end"/>
+                    app:icon="@android:drawable/ic_media_play" />
 
             </LinearLayout>
 
