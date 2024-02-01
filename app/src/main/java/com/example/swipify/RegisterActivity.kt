@@ -1,12 +1,16 @@
-package com.example.swipify
-
+import android.content.ContentValues
 import android.content.Intent
+import android.content.Context
+import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.swipify.LoginActivity
+import com.example.swipify.R
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -40,9 +44,27 @@ class RegisterActivity : AppCompatActivity() {
         val password = passwordEditText.text.toString()
         val confirmPassword = confirmPasswordEditText.text.toString()
 
-        // implementar la lógica de registro, verificar contraseñas coincidentes, etc.
+        if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password) || TextUtils.isEmpty(confirmPassword)) {
+            Toast.makeText(this, "Por favor, complete todos los campos.", Toast.LENGTH_SHORT).show()
+            return
+        }
 
-        Toast.makeText(this, "Registro exitoso para $username", Toast.LENGTH_SHORT).show()
+        if (password != confirmPassword) {
+            Toast.makeText(this, "Las contraseñas no coinciden.", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        val db = SwipifyDatabase(this)
+        val result = db.insertUsuario(username, password)
+
+        if (result != -1L) {
+            Toast.makeText(this, "Registro exitoso para $username", Toast.LENGTH_SHORT).show()
+
+            // Navegar a la pantalla de inicio de sesión
+            navigateToLogin()
+        } else {
+            Toast.makeText(this, "Error al registrar el usuario.", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun navigateToLogin() {
@@ -51,4 +73,3 @@ class RegisterActivity : AppCompatActivity() {
         // Puedes agregar finish() si no quieres que el usuario vuelva a la pantalla de registro al presionar Atrás
     }
 }
-
