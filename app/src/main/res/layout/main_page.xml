@@ -27,16 +27,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imagen_perfil" />
 
-    <RecyclerView
-        android:id="@+id/dynamicList"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homelist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
-    </RecyclerView>
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"/>
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -53,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
-            android:background="@color/2C2929"
+            android:background="@color/black"
             app:menu="@menu/bottom_navigation_menu" />
 
     </FrameLayout>
