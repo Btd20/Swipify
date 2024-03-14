@@ -1,7 +1,4 @@
-import android.content.ContentValues
 import android.content.Intent
-import android.content.Context
-import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Button
@@ -9,7 +6,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.swipify.LoginActivity
 import com.example.swipify.R
 
 class RegisterActivity : AppCompatActivity() {
@@ -70,6 +66,5 @@ class RegisterActivity : AppCompatActivity() {
     private fun navigateToLogin() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
-        // Puedes agregar finish() si no quieres que el usuario vuelva a la pantalla de registro al presionar Atrás
     }
 }

@@ -13,10 +13,9 @@ class TendencyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val tvTendency: ImageView = view.findViewById(R.id.tvTendency)
 
     fun render(tendencyModel: Tendency) {
-        tvTendencyName.text = tendencyModel.tendency
+        tvTendencyName.text = tendencyModel.title
 
-        val resourceId = tvTendency.resources.getIdentifier(tendencyModel.tendency, "drawable", tvTendency.context.packageName)
-        tvTendency.setImageResource(resourceId)
+        // Utiliza el identificador de recursos correcto de Tendency
+        tvTendency.setImageResource(tendencyModel.imageResourceId)
     }
-
 }

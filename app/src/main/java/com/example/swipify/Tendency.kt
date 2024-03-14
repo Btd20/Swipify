@@ -1,5 +1,5 @@
 package com.example.swipify
 
-data class Tendency(val tendency: String,val background:String,val picture:String ) {
+data class Tendency(val title: String, val gradientId: Int, val imageResourceId: Int ) {
 
 }

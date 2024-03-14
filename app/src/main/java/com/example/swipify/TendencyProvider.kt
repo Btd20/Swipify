@@ -2,26 +2,26 @@ package com.example.swipify
 
 class TendencyProvider {
     companion object{
-        val tendencyList = listOf<Tendency>(
+        val tendencyList = listOf(
             Tendency(
                 "Top más escuchado",
-                "drawable/gradient1",
-                "drawable/classic_rock.jpg"
+                R.drawable.gradient1,
+                R.drawable.nk
             ),
             Tendency(
                 "Éxitos de España",
-                "drawable/gradient2",
-                "drawable/good_times.jpg"
+                R.drawable.gradient2,
+                R.drawable.nk
             ),
             Tendency(
                 "Hits Internacional",
-                "drawable/gradient3",
-                "drawable/retro.jpg"
+                R.drawable.gradient3,
+                R.drawable.nk
             ),
             Tendency(
                 "Tendencias",
-                "drawable/gradient4",
-                "drawable/album.jpg"
+                R.drawable.gradient4,
+                R.drawable.nk
             ),
         )
     }

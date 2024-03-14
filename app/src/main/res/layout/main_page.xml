@@ -28,14 +28,15 @@
         app:srcCompat="@drawable/imagen_perfil" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/homelist"
+        android:id="@+id/recyclerTendency"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        />
 
     <FrameLayout
         android:id="@+id/frameLayout"

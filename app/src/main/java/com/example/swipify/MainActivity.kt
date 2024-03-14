@@ -1,13 +1,14 @@
 package com.example.swipify
 
+import LoginActivity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.swipify.R.id.*
+import com.example.swipify.R.id.bottom_navigation
+import com.example.swipify.R.id.recyclerTendency
 import com.example.swipify.adapter.TendencyAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
